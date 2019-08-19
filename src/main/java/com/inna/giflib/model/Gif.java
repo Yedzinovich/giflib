@@ -23,11 +23,11 @@ public class Gif {
         this.name = name;
     }
 
-    public LocalDate getDateUploeaded() {
+    public LocalDate getDateUploaded() {
         return dateUploaded;
     }
 
-    public void setDateUploeaded(LocalDate dateUploaded) {
+    public void setDateUploaded(LocalDate dateUploaded) {
         this.dateUploaded = dateUploaded;
     }
 
