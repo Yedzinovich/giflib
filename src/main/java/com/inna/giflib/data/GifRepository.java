@@ -16,7 +16,9 @@ public class GifRepository {
             new Gif("book-dominos",3, LocalDate.of(2015,9,15), "Craig Dennis", false),
             new Gif("compiler-bot",3, LocalDate.of(2015,2,13), "Ada Lovelace", true),
             new Gif("cowboy-coder",1 ,LocalDate.of(2015,2,13), "Grace Hopper", false),
-            new Gif("infinite-andrew",1, LocalDate.of(2015,8,23), "Marissa Mayer", true));
+            new Gif("infinite-andrew",1, LocalDate.of(2015,8,23), "Marissa Mayer", true),
+            new Gif("cry",1, LocalDate.of(2015,8,23), "Marissa Mayer", true),
+            new Gif("gomer-cry",1, LocalDate.of(2015,8,23), "Marissa Mayer", true));
 
     public Gif findByName(String name){
         for(Gif gif : ALL_GIFS){
