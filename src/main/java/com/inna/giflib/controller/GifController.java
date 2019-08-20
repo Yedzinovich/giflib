@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -27,5 +28,13 @@ public class GifController {
         Gif gif = gifRepository.findByName(name);
         modelMap.put("gif", gif);
         return "gif-details";
+    }
+
+    @RequestMapping(value = "/", params = "q")
+    public String gifSearch(@RequestParam("q") String q, ModelMap modelMap){
+        List<Gif> allGifs = gifRepository.findAllByName(q);
+        modelMap.put("gifs", allGifs);
+        return "search";
+
     }
 }

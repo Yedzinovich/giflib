@@ -49,4 +49,14 @@ public class GifRepository {
         }
         return  gifs;
     }
+
+    public List<Gif> findAllByName(String name){
+        List<Gif> gifs = new ArrayList<>();
+        for(Gif gif: ALL_GIFS){
+            if(gif.getName().toLowerCase().contains(name)){
+                gifs.add(gif);
+            }
+        }
+        return  gifs;
+    }
 }
