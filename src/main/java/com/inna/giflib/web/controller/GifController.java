@@ -1,6 +1,6 @@
 package com.inna.giflib.web.controller;
 
-import com.teamtreehouse.giflib.model.Gif;
+import com.inna.giflib.model.Gif;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;

@@ -1,6 +1,6 @@
 package com.inna.giflib.web.controller;
 
-import com.teamtreehouse.giflib.model.Category;
+import com.inna.giflib.model.Category;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;

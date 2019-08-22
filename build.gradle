@@ -17,5 +17,8 @@ repositories {
 dependencies {
     compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
     compile group: 'org.hashids', name: 'hashids', version: '1.0.3'
-
+    compile group: 'org.springframework', name: 'spring-orm', version: '5.1.9.RELEASE'
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.4.4.Final'
+    compile group: 'org.apache.tomcat', name: 'tomcat-dbcp', version: '9.0.24'
+    compile group: 'com.h2database', name: 'h2', version: '1.4.199'
 }
