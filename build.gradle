@@ -16,5 +16,6 @@ repositories {
 
 dependencies {
     compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    compile group: 'org.hashids', name: 'hashids', version: '1.0.3'
 
 }
